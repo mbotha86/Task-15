@@ -1,0 +1,269 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;    
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.row {
+    width: 960px;
+    margin: auto;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------Detail button on shop page------*/
+.detailsButton:link, .detailsButton:visited  {
+    background-color: teal;
+    border:black 3px solid;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    margin:auto
+}
+
+.detailsButton:hover {
+background-color: white;
+color: teal;
+}
+
+body {
+    margin:30px;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.6rem;
+}
+
+.mainNav {
+    background-color: teal;
+    padding: 5px;
+    font-size: 14px;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+       
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-inline: 10px;
+}
+
+h2 {
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*hide Shop button sub items until hover function is called*/
+ul.pList {
+    display: none;
+    width: 100%!important;
+}
+
+
+/*----comment boxes on landing page---*/
+.floating-box {
+    float:left;
+    background-color: darkgrey;
+    color: white;
+    font-style: italic;
+  width: 33.33%;
+  height: 80px;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid lightslategrey;
+  animation: mymove 5s infinite;
+  position:relative
+}
+
+@keyframes mymove {
+    from {background-color: darkslategrey;}
+    to {background-color: lightslategrey;}
+}
+
+/*-----About Page-----*/
+p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pAbout {
+    text-align: left;
+    margin-left: 15%;
+}
+
+
+/*This code added a bottom margin so that the details button didn't overlap with the image below*/
+.margin-btm {
+    margin-bottom: 2rem;
+}
+
+.form-inline {
+    margin-left: 40%;
+    margin-top: 1rem;
+}
+
+table, thead, th, td {
+    border: 0.25rem solid darkgrey;
+}
+thead {
+    background-color: darkgrey;
+    color: white;
+}
+
+/*-------CART PAGE---------*/
+.product-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid darkgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+    margin-bottom: 5px;
+}
+
+.price, .quantity, .total, .vat {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.product ion-icon{
+    cursor: pointer;
+}
+
+.products {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.products img{
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+/*------ Gift voucher-------*/
+
+#voucher-form {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 650px;
+    gap: 2px;
+    margin: 0 auto;
+    
+}
+
+
+/*------Address input fields--------*/
+#shipping-form {
+    display: grid;
+    grid-template-columns: 650px;
+    grid-template-rows: 9;
+    gap:5px;
+    width: 100%;
+    justify-content: center;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.dSelect, #collect, #delivery {
+    gap:5px;
+    width: 45%;
+    
+}
+
+/*Button styling on cart page*/
+
+#collect, #delivery  {
+    background-color: teal !important;
+    border:black 3px solid !important;
+    color: white !important;
+}
+
+
+#collect:hover, #delivery:hover {
+    background-color: white !important;
+    color: teal !important;
+    }
+

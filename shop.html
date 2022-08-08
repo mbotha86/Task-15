@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+      <!--These meta tags and links came from the Bootstrap website lined in the notes: https://getbootstrap.com/docs/4.1/getting-started/introduction/#css-->
+     <head>
+      <title>Shop</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="cap1Style.css">
+
+     </head>
+     <body class="shop">
+         
+         <header>
+            <h1>You and Me Design</h1>
+         </header>
+         <nav class="mainNav">
+             <ul class="navBar">
+                 <li><a href="landingPage.html">Home</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="#">Shop</a>
+                    <ul class="pList">
+                      <li>Baby Booties</li>
+                      <li>Pink Owl</li>
+                      <li>Educational Toys</li>
+                      <li>Baby Blankets</li>
+                      <li>Bath Toys</li>
+                      <li>Crib</li>
+                    </ul>
+                </li>
+                 <li><a href="contact.html">Contact</a></li>
+                 <!--add cart button and basket image-->
+                 <li class="cart">
+                   <a href="cart.html">
+                     <ion-icon name="basket"></ion-icon>Cart <span>0</span></a></li>
+             </ul>
+         </nav>
+
+         <!--This section of code is modelled off of task 5 code as well as example two from task 6 notes and https://getbootstrap.com/docs/4.1/content/images/#image-thumbnails.
+        Bootstrap explains that using image thumbnails adds a rounded 1px border around the image. Below I have chosen to include them inside the img <> -->
+        
+        <div class="container">
+          <div class="row">
+              <!--This next div class is the responsive image attribute which changes the size of the image depending on what device it is being viewed-->
+                <div class="img-fluid col-sm-4 margin-btm shadow p-3 mb-5 bg-white rounded">   
+                  <a href="Catalogue/booties.html">
+                    <img src="images/booties.jpg" class="img-thumbnail" alt="Booties" />
+                  </a>
+                      <h3>Baby Booties</h3>
+                      <p>Handmade with 100% cotton</p>
+                      <a href="Catalogue/booties.html"class="detailsButton">Details</a>
+                      <a class="add-cart cart1" href="#">Add to Cart</a>
+                </div>
+                <div class="img-fluid col-sm-4 margin-btm shadow p-3 mb-5 bg-white rounded">
+                  <a href="Catalogue/owl.html">
+                     <img src="images/owl.jpg" class="img-thumbnail" alt="owlPlush"/>
+                    </a>
+                     <h3>Pink Owl</h3>
+                     <p>Plush toy perfect for a baby to cuddle</p>
+                     <a href="Catalogue/owl.html"class="detailsButton">Details</a>
+                     <a class="add-cart cart2" href="#">Add to Cart</a>
+                </div>
+                <div class="img-fluid col-sm-4 margin-btm shadow p-3 mb-5 bg-white rounded">
+                  <a href="Catalogue/educational.html">
+                    <img src="images/educational.jpg" class="img-thumbnail" alt="educationaltoys" />
+                  </a>
+                    <h3>Educational Toys</h3>
+                    <p>We have a wide range of Educational toys to help development</p>
+                    <a href="Catalogue/educational.html"class="detailsButton">Details</a>
+                    <a class="add-cart cart3" href="#">Add to Cart</a>
+                </div>
+              </div>           
+
+            <div class="row">
+                <div class="img-fluid col-sm-4 margin-btm shadow p-3 mb-5 bg-white rounded">
+                  <a href="Catalogue/babyBlankets.html">
+                  <img src="images/babyBlankets.jpg" class="img-thumbnail" alt="babyblanket"/>
+                  </a>
+                  <h3>Baby Blankets</h3>
+                  <p>Hand knitted baby blankets made to order</p>
+                  <a href="Catalogue/babyBlankets.html"class="detailsButton">Details</a>
+                  <a class="add-cart cart4" href="#">Add to Cart</a>
+                </div>
+                <div class="img-fluid col-sm-4 margin-btm shadow p-3 mb-5 bg-white rounded">
+                  <a href="Catalogue/bathToys.html">
+                  <img src="images/bathToys.jpg" class="img-thumbnail" alt="bathtoys" />
+                  </a>
+                  <h3>Bath Toys</h3>
+                  <p>We have a wide range of bath toys</p>
+                  <a href="Catalogue/bathToys.html"class="detailsButton">Details</a>
+                  <a class="add-cart cart5" href="#">Add to Cart</a>
+               </div>
+               <div class="img-fluid col-sm-4 margin-btm shadow p-3 mb-5 bg-white rounded">
+                 <a href="Catalogue/crib.html">
+                  <img src="images/crib.jpg" class="img-thumbnail" alt="crib" />
+                 </a>
+                  <h3>Crib</h3>
+                  <p>Custom or pre-made cribs available</p>
+                  <a href="Catalogue/crib.html"class="detailsButton">Details</a>
+                  <a class="add-cart cart6" href="#">Add to Cart</a>
+               </div>
+            </div>
+        </div>
+
+         <!--The code below came from Bootstrap: https://getbootstrap.com/docs/4.1/components/forms/. 
+        I tried to modify it slightly to create a sign up form instead of signing in as per the example. -->
+         
+        <form class="form-inline">
+            <div class="form-group mb-2">
+              <label for="staticEmail2" class="sr-only">Email</label>
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Sign up for our newsletter">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">email@example.com</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+          </form>
+        
+          <!--I used Superbalist as inspiration for the table element.
+               The Bootstrap notes on https://getbootstrap.com/docs/4.1/content/tables/#examples inspired the code -->
+         
+        <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th scope="col">About Us</th>
+                      <th scope="col">Account</th>
+                      <th scope="col">Help</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Who We Are</td>
+                      <td>Account Details</td>
+                      <td>FAQ</td>
+                  </tr>
+                  <tr>
+                    <td>Careers</td>
+                    <td>Orders</td>
+                    <td>Returns Policy</td>
+                </tr>
+                <tr>
+                    <td>Gift Vouchers</td>
+                    <td>Returns and Exchanges</td>
+                    <td>Privacy Policy</td>
+                </tr>
+              </tbody>
+            </table>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+     </body>
+</html>

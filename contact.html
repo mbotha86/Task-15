@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Contact</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="cap1Style.css">
+
+    </head>
+
+    <body>
+
+        <header> 
+            <h1>You and Me Design</h1>
+        </header>
+
+        <nav class="mainNav">
+            <ul>
+                <li><a href="landingPage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Contact</a></li> 
+                <!--add cart button and basket image-->
+                <li class="cart">
+                    <a href="cart.html">
+                      <ion-icon name="basket"></ion-icon>Cart <span>0</span></a></li>
+            </ul>
+        </nav>
+
+    <h2>Contact Us </h2>
+    <div class="container">
+        <form action="action-page.php">
+            <label for="fname">First Name</label>
+            <input type=text id="fname" name="firstname" placeholder="Your first name"><br>
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name"><br>
+            
+            <input type="radio" id="country" name="countryofresidence" value="southAfrica">
+            <label for="country">South Africa</label>
+
+            <input type="radio" id="country" name="countryofresidence" value="europe">
+            <label for="country">Europe</label>
+        
+            <input type="radio" id="country" name="countryofresidence" value="usa">
+            <label for="country">USA</label><br>
+
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Enter text here" style="height:200px"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>    
+    </div>
+
+
+
+        <p>
+            Email: info@youandme.co.za
+            <br>
+            Mobile: +27 84 123 4567
+            <br>
+            <a href="https://www.instagram.com/you_and_me_design/">Instagram: @you_and_me_design</a>
+            <br>
+            <a href="https://www.facebook.com/youandmedesignCPT">Facebook: You & Me</a>
+        </p>
+
+        <!--The code below came from Bootstrap: https://getbootstrap.com/docs/4.1/components/forms/. 
+        I tried to modify it slightly to create a sign up form instead of signing in as per the example. -->
+         
+        <form class="form-inline">
+            <div class="form-group mb-2">
+              <label for="staticEmail2" class="sr-only">Email</label>
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Sign up for our newsletter">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">email@example.com</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+          </form>
+        
+          <!--I used Superbalist as inspiration for the table element as I couldn't figure out what kind of table to add and how to use it best.
+               The Bootstrap notes on https://getbootstrap.com/docs/4.1/content/tables/#examples inspired the code -->
+         
+        <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th scope="col">About Us</th>
+                      <th scope="col">Account</th>
+                      <th scope="col">Help</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Who We Are</td>
+                      <td>Account Details</td>
+                      <td>FAQ</td>
+                  </tr>
+                  <tr>
+                    <td>Careers</td>
+                    <td>Orders</td>
+                    <td>Returns Policy</td>
+                </tr>
+                <tr>
+                    <td>Gift Vouchers</td>
+                    <td>Returns and Exchanges</td>
+                    <td>Privacy Policy</td>
+                </tr>
+              </tbody>
+            </table>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
